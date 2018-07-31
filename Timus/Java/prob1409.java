@@ -1,0 +1,9 @@
+import java.io.*;
+public class prob1409{
+    public static void main(String[] args)throws IOException{
+        BufferedReader key=new BufferedReader(new InputStreamReader(System.in));
+        String[] line=key.readLine().split(" ");
+        int a=Integer.parseInt(line[0]), b=Integer.parseInt(line[1]);
+        System.out.printf("%d %d\n", b-1, a-1);
+    }
+}
