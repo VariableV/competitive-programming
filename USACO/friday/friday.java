@@ -13,6 +13,11 @@ public class friday{
 		return pleap && year % 100 == 0 && year%400 == 0;
 	}
 	public static void main(String[] args)throws IOException{
+		/*
+		solution:
+		iterate through each day on the gregorian calendar
+		if date is the 13th, then store it in a frequency table
+		*/
 		BufferedReader key=new BufferedReader(new FileReader("friday.in"));
 		PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("friday.out")));
 		int n=Integer.parseInt(key.readLine());
